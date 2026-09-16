@@ -1,0 +1,39 @@
+<html></html>
+  <head></head>
+
+
+
+  <body>
+    <section>
+        <img class="mySlides" src="Image1.jpg" style="height:500px;">
+        <img class="mySlides" src="Image2.jpg" style="height:500px;">
+        <img class="mySlides" src="Image3.jpg" style="height:500px;">
+    </section>
+    </section>
+
+   </body>
+
+
+    <script>
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var slides = document.getElementsByClassName("mySlides");
+
+            for ( i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            myIndex++
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+
+    </script>
+</html>
